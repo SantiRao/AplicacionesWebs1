@@ -1,18 +1,18 @@
 @font-face{
-    font-family: 'CaviarDreams';
-    src:url(/Fuentes/CaviarDreams.ttf);
+    font-family: CaviarDreams;
+    src:url(Fuentes/CaviarDreams.ttf) format(truetype);
     font-weight: lighter;
     font-style: normal;
 }
 
 body {
-    font-family: calc(CaviarDreams);
+    font-family: CaviarDreams;
     background-color: #f0f0f0;
 }
 
 h1 {
     color: #333;
-    font-family:calc(CaviarDreams);
+    font-family: CaviarDreams;
 }
 
 p {

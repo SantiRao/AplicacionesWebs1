@@ -1,6 +1,39 @@
+@font-face{
+    font-family: CaviarDreams;
+    src:url(Fuentes/CaviarDreams.ttf) format(truetype);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: CaviarDreams;
     background-color: darkgreen;
     color:aliceblue;
 }
 
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 45px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: CaviarDreams;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li:last-child{
+    margin-right: 0;
+}
