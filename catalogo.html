@@ -6,7 +6,53 @@
     <title>Nuestros discos</title>
 </head>
 <body>
-    <h1>Titulo</h1>
-    <p>Parrafo</p>
+    <header>
+        <h1 class="nombre">Nuestros<br>Discos</h1>
+        
+        <h3 class="menu">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html"> Nuestros Discos</a></li>
+                <li><a href="reserva.html"> Encargá el tuyo</a></li>
+            </ul>
+        </h3>  
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <td> <img src="Imagenes/etsunarianagrande.jpg" alt="EtSunArianaGrande" width="100" height="100"><br>Ariana Grande <br>Eternal Sunshine <br>$14.999 </td>
+                <td><img src="Imagenes/Laufey-Bewitched.jpg" alt="BewLaufey" width="100" height="100"><br> Laufey <br>Bewitched <br>$12.999 </td>
+                <td><img src="Imagenes/ab67616d0000b273f4d64a6a6b7e24b6bd9f009f.jpg" alt="MalQuererRosalia" width="100" height="100"><br>ROSALÍA <br>El Mal Querer <br>$14.999 </td>
+                <td><img src="Imagenes/after-hours.jpg" alt="AftHoursTheWeeknd" width="100" height="100"><br>The Weeknd <br>After Hours <br>$14.999 </td>
+            <tr>
+                <td><img src="Imagenes/ab67616d0000b273f4d64a6a6b7e24b6bd9f009f.jpg" alt="MalQuererRosalia" width="100" height="100"><br>ROSALÍA <br>El Mal Querer <br>$14.999 </td>
+                <td><img src="Imagenes/after-hours.jpg" alt="AftHoursTheWeeknd" width="100" height="100"><br>The Weeknd <br>After Hours <br>$14.999 </td>
+                <td><img src="Imagenes/Laufey-Bewitched.jpg" alt="BewLaufey" width="100" height="100"><br> Laufey <br>Bewitched <br>$12.999 </td>
+                <td> <img src="Imagenes/etsunarianagrande.jpg" alt="EtSunArianaGrande" width="100" height="100"><br>Ariana Grande <br>Eternal Sunshine <br>$14.999 </td>
+            </tr>
+        </table>
+
+        <form>
+            <label for="filtro">Filtros: </label>
+            <select name="filtro" id="filtro">
+                <option value="Precio">Precio</option>
+                <option value="Nombre">Nombre (A-Z)</option>
+                <option value="año">Año</option>
+            </select>
+            <br>
+            <label>Artistas:</label> <br>
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="ArianaGrande">
+            <label for="checkbox1">Ariana Grande</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="Laufey">
+            <label for="checkbox2">Laufey</label><br>
+            <input type="checkbox" id="checkbox3" name="checkbox3" value="ROSALÍA">
+            <label for="checkbox3">ROSALÍA</label><br>
+            <input type="checkbox" id="checkbox4" name="checkbox4" value="TheWeeknd">
+            <label for="checkbox4">The Weeknd</label><br>
+        </form>
+    </main>
+
 </body>
 </html>

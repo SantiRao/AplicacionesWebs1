@@ -17,9 +17,9 @@
         <h3 class="menu">
 
             <ul>
-                <li><a href="index.css">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="catalogo.html"> Nuestros Discos</a></li>
-                <li><a href="reserva.css"> Encargá el tuyo</a></li>
+                <li><a href="reserva.html"> Encargá el tuyo</a></li>
             </ul>
 
         </h3>
@@ -27,12 +27,58 @@
     </header>
 
     <main>
-        <p class="pasos">
-            <ul>
-                <li></li>
-            </ul>
-        </p>
+        <div class="listapasos">
+            <div class="paso">
+                <span class="numero">1.</span>Rellena los requisitos que <br>necesitamos para buscar tu disco
+            </div>
+            <div class="paso">
+                <span class="numero">2.</span> Envia el formulario
+            </div>
+            <div class="paso">
+                <span class="numero">3.</span>En 7 días hábiles te avisaremos si lo <br>encontramos y las especificaciones del disco
+            </div>
+        </div>
+        
+        <form class="formulario" action="/Reservas.txt" method="post">
+
+            <div class="grupo-izqueirda">
+                <div class="grupo">
+                    <label class="nombre-disco" for="nombre-disco">Nombre del Disco:</label>
+                    <input type="text" id="Artista" name="artista">
+                </div>
+                <div class="grupo">
+                    <label class="artista" for="artista">Artista:</label>
+                    <input type="text" id="artista" name="artista">
+                </div>
+            </div>
+
+            <div class="grupo-derecha">
+                <div class="grupo">   
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="grupo">
+                    <label for="especificaciones">Especificaciones:</label>
+                    <textarea name="especificaciones" id="especificaciones"></textarea>
+                </div>
+            </div>
+            <button class="boton" type="submit">Enviar</button>
+        </form>
     </main>
+
+    <footer>
+        <div class="grupo-flexbox">
+            <div class="grupof">
+                <label for="contacto">Contacto</label>
+                <label for="ayuda">Ayuda</label>
+            </div>
+
+            <div class="grupof">
+                <label for="trabaja">Trabajá con Nosotros</label>
+                <label for="locales">Locales</label>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

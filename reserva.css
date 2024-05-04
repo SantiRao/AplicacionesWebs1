@@ -12,8 +12,12 @@ h1{
     color:aliceblue;
 }
 
+header{
+    background-color: darkgreen;
+}
+
 .menu{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     margin-top: 45px;
@@ -21,6 +25,7 @@ h1{
     text-decoration: none;
     color: aliceblue;
     font-family: CaviarDreams;
+    margin-bottom: 0;
 }
 
 .menu ul{
@@ -37,3 +42,107 @@ h1{
 .menu ul li:last-child{
     margin-right: 0;
 }
+
+.listapasos{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    margin-top: 0;
+    color: aliceblue;
+    font-family: CaviarDreams;
+}
+
+.paso{
+    display:inline-flex;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.numero{
+    font-size: 100px;
+    margin-right: 5px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 800pxs;
+}
+
+.grupo-izquierda,
+.grupo-derecha{
+    flex: 1;
+}
+
+.grupo{
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: CaviarDreams;
+}
+
+.grupo-derecha{
+    margin-left: 20px;
+    position: flex;
+    bottom: 360px;
+    right: 50px;
+}
+
+.grupo-izquierda{
+    margin-right: 20px;
+    position: absolute;
+    bottom: 360px;
+    left: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 200px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.boton{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    background-color: darkgreen;
+}
+
+.artista{
+    margin-left: 30px;
+}
+
+footer{
+    background-color: darkgreen;
+    color: aliceblue;
+    height: 1000px;
+}
+
+.grupo-flexbox{
+    font-family: CaviarDreams;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;   
+    margin-top: 260px;
+    margin-left: 200px;
+}
+
+.grupof{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+}
+
+
