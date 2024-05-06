@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+*{
+    font-family: CaviarDreams;
+}
+
 body {
     font-family: CaviarDreams;
     background-color: #f0f0f0;
@@ -20,6 +24,7 @@ p {
 }
 
 button{
+    font-family: CaviarDreams;
     height: 50px;
     width: 1000px;
 }

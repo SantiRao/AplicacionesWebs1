@@ -1,0 +1,50 @@
+@font-face{
+    font-family: CaviarDreams;
+    src:url(Fuentes/CaviarDreams.ttf) format(truetype);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+*{
+    font-family: CaviarDreams;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 45px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li:last-child{
+    margin-right: 0;
+}
+
+table{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    margin-top: 50px;
+}
+
+.row > td img {
+    width: 120px;
+}
+
+table{
+    padding: 20px;
+}
