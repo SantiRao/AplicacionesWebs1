@@ -8,52 +8,128 @@
 </head>
 <body>
     <header>
-        <h1 class="nombre">Nuestros<br>Discos</h1>
-        
-        <h3 class="menu">
+        <div class="cabecera">
+            <h1>Nuestros Discos</h1>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html"> Nuestros Discos</a></li>
-                <li><a href="reserva.html"> Encargá el tuyo</a></li>
-            </ul>
-        </h3>  
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html"> Nuestros Discos</a></li>
+                    <li><a href="reserva.html"> Encargá el tuyo</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <table>
-            <tr class="row">
-                <td> <img src="Imagenes/etsunarianagrande.jpg" alt="EtSunArianaGrande"><br>Ariana Grande <br>Eternal Sunshine <br>$14.999 </td>
-                <td><img src="Imagenes/Laufey-Bewitched.jpg" alt="BewLaufey"><br> Laufey <br>Bewitched <br>$12.999 </td>
-                <td><img src="Imagenes/malquererrosalia.jpg" alt="MalQuererRosalia"> <br>ROSALÍA <br>El Mal Querer <br>$14.999 </td>
-                <td><img src="Imagenes/after-hours.jpg" alt="AftHoursTheWeeknd"><br>The Weeknd <br>After Hours <br>$14.999 </td>
-            <tr class="row">
-                <td><img src="Imagenes/esencia-humbe.jpg" alt="EsenciaHumbe"><br>Humbe <br>ESENCIA <br>$10.999 </td>
-                <td><img src="Imagenes/kendrick - mmabs.png" alt="MMABSKendrick" ><br>Kendrick Lamar <br>Mr. Morales and <br>the big Steppers <br>$18.999 </td>
-                <td><img src="Imagenes/mtdk-kw.jpg" alt="MTDKanyeWest"><br>Kanye West <br>My Beautiful Twisted <br>Dark Fantasy <br>$11.999 </td>
-                <td> <img src="Imagenes/Billie_Eilish_-_Happier_Than_Ever.png" alt="HappierThanBillie"><br>Billie Eilish <br>Happier Than Ever <br>$15.999 </td>
-            </tr>
-        </table>
+        <div class="container">
+            <div class="filtros">
+                <h2>Filtros</h2>
+                <div class="grupofiltro">
+                    <h3>Artistas</h3>
+                    <label><input type="checkbox" name="artista" value="Ariana"> Ariana Grande</label>
+                    <label><input type="checkbox" name="artista" value="Billie"> Billie Eilish</label>
+                    <label><input type="checkbox" name="artista" value="Charly"> Charly Garcia</label>
+                    <label><input type="checkbox" name="artista" value="Humbe"> Humbe</label>
+                    <label><input type="checkbox" name="artista" value="Laufey"> Laufey</label>
+                    <label><input type="checkbox" name="artista" value="Kendrick"> Kendrik Lamar</label>
+                    <label><input type="checkbox" name="artista" value="YE"> Kanye West</label>
+                    <label><input type="checkbox" name="artista" value="PinkFloyd"> Pink Floyd</label>
+                    <label><input type="checkbox" name="artista" value="Rosalia"> Rosaía</label>
+                    <label><input type="checkbox" name="artista" value="Tainy"> Tainy</label>
+                    <label><input type="checkbox" name="artista" value="Abel"> The Weeknd</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Ordenar por</h3>
+                    <select name="sort-by">
+                        <option value="nombre-asc">De la A a la Z</option>
+                        <option value="nombre-desc">De la Z a la A</option>
+                        <option value="precio-asc">De menor a mayor precio</option>
+                        <option value="precio-desc">De mayor a menor precio</option>
+                        <option value="artistas">Por Artista</option>
+                    </select>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="productos">
+                    <div class="producto">
+                        <img src="Imagenes/etsunarianagrande.jpg" alt="etsunarianagrande">
+                        <h3>Ariana Grande</h3>
+                        <p>Eternal Sunshine</p>
+                        <p>$12.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/Billie_Eilish_-_Happier_Than_Ever.png" alt="happierthaneverBillie">
+                        <h3>Billie Eilish</h3>
+                        <p>Happier Than Ever</p>
+                        <p>$10.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/esencia-humbe.jpg" alt="AfterHoursTheWeek">
+                        <h3>Humbe</h3>
+                        <p>ESENCIA</p>
+                        <p>$9.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/kendrick - mmabs.png" alt="AfterHoursTheWeek">
+                        <h3>Kendrik Lamar</h3>
+                        <p>Mr. Morale & The <br>Big Steppers</p>
+                        <p>$18.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/Laufey-Bewitched.jpg" alt="AfterHoursTheWeek">
+                        <h3>Laufey</h3>
+                        <p>Bewitched</p>
+                        <p>$10.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/malquererrosalia.jpg" alt="AfterHoursTheWeek">
+                        <h3>Rosalia</h3>
+                        <p>El Mal Querer</p>
+                        <p>$12.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/mtdk-kw.jpg" alt="AfterHoursTheWeek">
+                        <h3>Kanye West</h3>
+                        <p>My Beautiful Dark <br>Twisted Fantasy</p>
+                        <p>$13.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/Dark_Side_of_the_Moon.png" alt="DarkSideOfMoon">
+                        <h3>Pink Floyd</h3>
+                        <p>The Dark Side <br> Of The Moon</p>
+                        <p>$19.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/tainy_data-portada.jpg" alt="DataTainy">
+                        <h3>Tainy</h3>
+                        <p>DATA</p>
+                        <p>$15.999</p>
+                    </div>
+                    <div class="producto">
+                        <img src="Imagenes/clicsmodernos.jpg" alt="ClicsModernos">
+                        <h3>Charly Garcia</h3>
+                        <p>Clics Modernos</p>
+                        <p>$21.999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <form>
-            <label for="filtro">Filtros: </label>
-            <select name="filtro" id="filtro">
-                <option value="Precio">Precio</option>
-                <option value="Nombre">Nombre (A-Z)</option>
-                <option value="año">Año</option>
-            </select>
-            <br>
-            <label>Artistas:</label> <br>
-            <input type="checkbox" id="checkbox1" name="checkbox1" value="ArianaGrande">
-            <label for="checkbox1">Ariana Grande</label><br>
-            <input type="checkbox" id="checkbox2" name="checkbox2" value="Laufey">
-            <label for="checkbox2">Laufey</label><br>
-            <input type="checkbox" id="checkbox3" name="checkbox3" value="ROSALÍA">
-            <label for="checkbox3">ROSALÍA</label><br>
-            <input type="checkbox" id="checkbox4" name="checkbox4" value="TheWeeknd">
-            <label for="checkbox4">The Weeknd</label><br>
-        </form>
     </main>
 
+    <!-- <footer>
+            <div class="grupo-flexbox">
+                <div class="grupof">
+                    <label for="contacto">Contacto</label>
+                    <label for="ayuda">Ayuda</label>
+                </div>
+    
+                <div class="grupof">
+                    <label for="trabaja">Trabajá con Nosotros</label>
+                    <label for="locales">Locales</label>
+                </div>
+             </div> -->
+        <!-- </footer> -->
 </body>
 </html>

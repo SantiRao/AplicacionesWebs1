@@ -9,63 +9,58 @@
 </head>
 <body>
     <header>
+        <div class="cabecera">
+            <h1>Encargá el tuyo!</h1>
 
-        <h1 class="nombre">Vos pedilo,<br>
-            nosotros lo buscamos
-        </h1>
-        
-        <h3 class="menu">
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html"> Nuestros Discos</a></li>
-                <li><a href="reserva.html"> Encargá el tuyo</a></li>
-            </ul>
-
-        </h3>
-        
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html"> Nuestros Discos</a></li>
+                    <li><a href="reserva.html"> Encargá el tuyo</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="listapasos">
+        <section class="instrucciones">
             <div class="paso">
-                <span class="numero">1.</span>Rellena los requisitos que <br>necesitamos para buscar tu disco
+                <h2>1.</h2>
+                <p>Rellena los requisitos que necesitamos <br> para buscar tu disco</p>
             </div>
             <div class="paso">
-                <span class="numero">2.</span> Envia el formulario
+                <h2>2.</h2>
+                <p>Enviá el formulario</p>
             </div>
             <div class="paso">
-                <span class="numero">3.</span>En 7 días hábiles te avisaremos si lo <br>encontramos y las especificaciones del disco
+                <h2>3.</h2>
+                <p>En 7 días hábiles te avisaremos si lo encontramos <br> y las especificaciones del disco</p>
             </div>
-        </div>
-        
-        <form class="formulario" action="/Reservas.txt" method="post">
-
-            <div class="grupo-izqueirda">
-                <div class="grupo">
-                    <label class="nombre-disco" for="nombre-disco">Nombre del Disco:</label>
-                    <input type="text" id="Artista" name="artista">
+        </section>
+        <section class="formulario">
+            <form>
+                <div class="campo">
+                    <label for="nombre-disco">Nombre del Disco:</label>
+                    <input type="text" id="nombre-disco" name="nombre-disco">
                 </div>
-                <div class="grupo">
-                    <label class="artista" for="artista">Artista:</label>
-                    <input type="text" id="artista" name="artista">
+                <div class="campo">
+                    <label for="especificaciones">Especificaciones:</label>
+                    <textarea id="especificaciones" name="especificaciones"></textarea>
                 </div>
-            </div>
-
-            <div class="grupo-derecha">
-                <div class="grupo">   
-                    <label for="email">E-mail:</label>
+                <div class="campo">
+                    <label for="nombre-artista">Nombre del Artista:</label>
+                    <input type="text" id="nombre-artista" name="nombre-artista">
+                </div>
+                <div class="campo">
+                    <label for="email">Tu E-Mail:</label>
                     <input type="email" id="email" name="email">
                 </div>
-                <div class="grupo">
-                    <label for="especificaciones">Especificaciones:</label>
-                    <textarea name="especificaciones" id="especificaciones"></textarea>
+                <div class="campo">
+                    <button type="submit">Enviar</button>
                 </div>
-            </div>
-            <button class="boton" type="submit">Enviar</button>
-        </form>
+            </form>
+        </section>
     </main>
-
     <footer>
         <div class="grupo-flexbox">
             <div class="grupof">
@@ -79,6 +74,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

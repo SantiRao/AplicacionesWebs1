@@ -8,18 +8,27 @@
 </head>
 <body>
     <header>
-        <h1 class="nombre">Somos Musica</h1>
-        
-        <h3 class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html"> Nuestros Discos</a></li>
-                <li><a href="reserva.html"> Encargá el tuyo</a></li>
-            </ul>
-        </h3>
+        <div class="cabecera">
+            <h1>Somos Musica</h1>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html"> Nuestros Discos</a></li>
+                    <li><a href="reserva.html"> Encargá el tuyo</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <button type="button"><a href="catalogo.html">Mirá nuestros discos →</a></button>
+    <main>
+        <h2>Si buscas Musica,<br>nosotros la tenemos</h2>
+
+        <div class="button-container">
+            <a href="catalogo.html"><button class="custom-button left-rounded">Mirá nuestos discos</button></a>
+            <a href="catalogo.html"><button class="custom-button right-rounded">→</button></a>
+        </div>
+    </main>
 
     <footer>
         <div class="grupo-flexbox">
@@ -27,13 +36,11 @@
                 <label for="contacto">Contacto</label>
                 <label for="ayuda">Ayuda</label>
             </div>
-
             <div class="grupof">
                 <label for="trabaja">Trabajá con Nosotros</label>
                 <label for="locales">Locales</label>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
