@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
     <title>Nuestros discos</title>
 </head>
 <body>
@@ -24,7 +25,6 @@
     <main>
         <div class="container">
             <div class="filtros">
-                <h2>Filtros</h2>
                 <div class="grupofiltro">
                     <h3>Artistas</h3>
                     <label><input type="checkbox" name="artista" value="Ariana"> Ariana Grande</label>
@@ -41,72 +41,72 @@
                 </div>
                 <div class="filter-group">
                     <h3>Ordenar por</h3>
-                    <select name="sort-by">
+                    <select id="combobox" name="sort-by" onchange="ordenar()">
+                        <option value="artista">Por Artista</option>
                         <option value="nombre-asc">De la A a la Z</option>
                         <option value="nombre-desc">De la Z a la A</option>
                         <option value="precio-asc">De menor a mayor precio</option>
                         <option value="precio-desc">De mayor a menor precio</option>
-                        <option value="artistas">Por Artista</option>
                     </select>
                 </div>
             </div>
             <div class="contenido">
-                <div class="productos">
-                    <div class="producto">
+                <div id="productos" class="productos">
+                    <div class="producto" nombre="Eternal Sunshine" precio="12999" artista="Ariana Grande">
                         <img src="Imagenes/etsunarianagrande.jpg" alt="etsunarianagrande">
                         <h3>Ariana Grande</h3>
                         <p>Eternal Sunshine</p>
                         <p>$12.999</p>
                     </div>
-                    <div class="producto">
+                    <div class="producto" nombre="Happier Than Ever" precio="10999" artista="Billie Eilish">
                         <img src="Imagenes/Billie_Eilish_-_Happier_Than_Ever.png" alt="happierthaneverBillie">
                         <h3>Billie Eilish</h3>
                         <p>Happier Than Ever</p>
                         <p>$10.999</p>
                     </div>
-                    <div class="producto">
-                        <img src="Imagenes/esencia-humbe.jpg" alt="AfterHoursTheWeek">
+                    <div class="producto" nombre="ESENCIA" precio="9999" artista="Humbe">
+                        <img src="Imagenes/esencia-humbe.jpg" alt="esencia-humbe">
                         <h3>Humbe</h3>
                         <p>ESENCIA</p>
                         <p>$9.999</p>
                     </div>
-                    <div class="producto">
+                    <div class="producto" nombre="Mr. Morale & The Big Steppers" precio="18999" artista="Kendrick Lamar">
                         <img src="Imagenes/kendrick - mmabs.png" alt="AfterHoursTheWeek">
                         <h3>Kendrik Lamar</h3>
                         <p>Mr. Morale & The <br>Big Steppers</p>
                         <p>$18.999</p>
                     </div>
-                    <div class="producto">
-                        <img src="Imagenes/Laufey-Bewitched.jpg" alt="AfterHoursTheWeek">
+                    <div class="producto" nombre="Bewitched" precio="10999" artista="Laufey">
+                        <img src="Imagenes/Laufey-Bewitched.jpg" alt="Laufey-Bewitched">
                         <h3>Laufey</h3>
                         <p>Bewitched</p>
                         <p>$10.999</p>
                     </div>
-                    <div class="producto">
-                        <img src="Imagenes/malquererrosalia.jpg" alt="AfterHoursTheWeek">
+                    <div class="producto" nombre="El Mal Querer" precio="12999" artista="Rosalia">
+                        <img src="Imagenes/malquererrosalia.jpg" alt="malquererrosalia">
                         <h3>Rosalia</h3>
                         <p>El Mal Querer</p>
                         <p>$12.999</p>
                     </div>
-                    <div class="producto">
-                        <img src="Imagenes/mtdk-kw.jpg" alt="AfterHoursTheWeek">
+                    <div class="producto" nombre="My Beautiful Dark Twisted Fantasy" precio="13999" artista="Kanye West">
+                        <img src="Imagenes/mtdk-kw.jpg" alt="mbdtf-Kanye">
                         <h3>Kanye West</h3>
                         <p>My Beautiful Dark <br>Twisted Fantasy</p>
                         <p>$13.999</p>
                     </div>
-                    <div class="producto">
+                    <div class="producto" nombre="The Dark Side of The Moon" precio="19999" artista="Pink Floyd">
                         <img src="Imagenes/Dark_Side_of_the_Moon.png" alt="DarkSideOfMoon">
                         <h3>Pink Floyd</h3>
-                        <p>The Dark Side <br> Of The Moon</p>
+                        <p>The Dark Side <br> of the Moon</p>
                         <p>$19.999</p>
                     </div>
-                    <div class="producto">
+                    <div class="producto" nombre="DATA" precio="15999" artista="Tainy">
                         <img src="Imagenes/tainy_data-portada.jpg" alt="DataTainy">
                         <h3>Tainy</h3>
                         <p>DATA</p>
                         <p>$15.999</p>
                     </div>
-                    <div class="producto">
+                    <div class="producto" nombre="Clics Modernos" precio="21999" artista="Charly Garcia">
                         <img src="Imagenes/clicsmodernos.jpg" alt="ClicsModernos">
                         <h3>Charly Garcia</h3>
                         <p>Clics Modernos</p>
